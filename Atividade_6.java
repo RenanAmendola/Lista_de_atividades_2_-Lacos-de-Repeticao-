@@ -20,8 +20,9 @@ public class Atividade_6 {
 		if (num > 0) {
 		if (num % 3 == 0) {
 			multi += num;
+			y++;
 		}
-		   y++;
+		   
 		
 		}
 		

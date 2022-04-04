@@ -25,21 +25,34 @@ public class Atividade_4 {
 	
 	Scanner leia = new Scanner(System.in);
 	
-	while( x != 150) {
+	while( x != 3) {
 		x++;
 
 	System.out.print("Informe a sua idade: ");
 	idade = leia.nextInt();
+	while(idade < 1 || idade > 120) {
+		System.out.print("Informe uma idade valida: ");
+		idade = leia.nextInt();
+	}
+	
 	
 	System.out.print("Informe a seu sexo: ");
 	System.out.println("1 - Feminino / 2 - Masculino / 3 - Outro ");
 	sexo = leia.nextInt();
-	
+	while(sexo < 1 || sexo > 3) {
+		System.out.print("Informe um numero valido: ");
+		System.out.println("1 - Feminino / 2 - Masculino / 3 - Outro ");
+		sexo = leia.nextInt();
+	}
 	
 	System.out.print("Informe seu nivel de estresse : ");
 	System.out.println("1 - Pessoa calma / 2 - Pessoa nervoda / 3 - Pessoa agressiva");
 	opcao = leia.nextInt();
-	
+	while(opcao < 1 || opcao > 3) {
+		System.out.print("Informe um numero valido: ");
+		System.out.println("1 - Pessoa calma / 2 - Pessoa nervoda / 3 - Pessoa agressiva");
+		opcao = leia.nextInt();
+	}
 	
 	if(opcao == 1) {
 		pessoasCalmas++;
